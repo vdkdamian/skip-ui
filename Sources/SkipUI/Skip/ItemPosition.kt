@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: LGPL-3.0-only WITH LGPL-3.0-linking-exception
+// SPDX-License-Identifier: MPL-2.0
 package org.burnoutcrew.reorderable
 
 data class ItemPosition(val index: Int, val key: Any?)

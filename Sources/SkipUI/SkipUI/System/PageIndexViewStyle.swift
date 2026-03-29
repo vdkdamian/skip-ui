@@ -1,5 +1,5 @@
-// Copyright 2023–2025 Skip
-// SPDX-License-Identifier: LGPL-3.0-only WITH LGPL-3.0-linking-exception
+// Copyright 2023–2026 Skip
+// SPDX-License-Identifier: MPL-2.0
 /*
 /// An index view style that places a page index view over its content.
 ///

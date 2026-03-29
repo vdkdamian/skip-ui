@@ -1,5 +1,5 @@
-// Copyright 2023–2025 Skip
-// SPDX-License-Identifier: LGPL-3.0-only WITH LGPL-3.0-linking-exception
+// Copyright 2023–2026 Skip
+// SPDX-License-Identifier: MPL-2.0
 // Note: @ViewBuilder support is built into the Skip transpiler.
 // This file does not need SKIP support. This stub is maintained
 // to allow this package to compile in Swift.
