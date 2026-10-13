@@ -777,6 +777,13 @@ public protocol TabContent : View {
     var badge: Text? { get set }
 }
 
+/// Constructs tab content using the same view-building pipeline as the rest of
+/// SkipUI. The type alias preserves SwiftUI's generic builder surface while
+/// allowing Skip's built-in `ViewBuilder` support to compose the content on
+/// Android.
+// SKIP REPLACE: // TabContentBuilder uses the transpiler's built-in ViewBuilder support.
+public typealias TabContentBuilder<TabValue> = ViewBuilder
+
 // SKIP @bridge
 public struct Tab : TabContent, Renderable {
     let label: ComposeBuilder
@@ -1134,7 +1141,8 @@ extension TabContent {
         return self
     }
 
-    public func badge(_ count: Int) -> some TabContent {
+    // SKIP @bridge
+    public func badge(_ count: Int) -> any TabContent {
         var tabContent = self
         tabContent.badge = count > 0 ? Text(String(count)) : nil
         return tabContent
